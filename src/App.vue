@@ -3,7 +3,7 @@
     <!-- 头部 -->
     <mt-header fixed title="我的商城"></mt-header>
     <!-- 中部 -->
-   
+   s
     <!-- 底部 -->
     <nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item mui-active" href="#tabbar">
