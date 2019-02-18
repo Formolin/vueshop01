@@ -1,0 +1,13 @@
+<template>
+  <div>amount.vue
+    <br>
+    通过vuex获取counter的数据---{{$store.state.count}}
+    <br>-------
+    <br>
+    {{$store.getters.txt}}
+  </div>
+</template>
+<script>
+</script>
+<style>
+</style>
