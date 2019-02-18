@@ -10,6 +10,8 @@ import productinfo from './components/productinfo.vue'
 import desc from './components/desc.vue'
 import proComment from './components/proComment.vue'
 import vuextemplate from './components/vuextemplate.vue'
+import imageshare from './components/imageshare.vue'
+import imgInfo from './components/imgInfo.vue'
 
 var routes = [
     { path: '/', redirect:'/home' },
@@ -23,6 +25,8 @@ var routes = [
     { path: '/home/desc/:id', component: desc,name:'desc' },
     { path: '/home/proComment/:id', component: proComment,name:'proComment' },
     { path: '/home/vuex', component: vuextemplate },
+    { path: '/home/imageshare', component: imageshare },
+    { path: '/home/imageshare/imgInfo', component: imgInfo },
    
 ]
 

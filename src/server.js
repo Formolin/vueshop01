@@ -118,7 +118,27 @@ server.on('request', function (req, res) {
         })
 
         res.end(query.callback + "(" + JSON.stringify(data, null, 4) + ")")
-    }
+    }else if (url == `/getImagesShare/:id?${callback}`) {
+        var cateid = query.id
+        console.log('img--'+cateid)
+        var data = Mock.mock({
+            'imagesShare|5-10': [
+                {
+                    'id|+1': 0,
+                    img:'@image(842x242,@color,@character)',
+                    title:'@title',
+                    text:'@cparagraph(2,5)'
+                }
+            ],
+            'cate|6':[
+                {
+                    'id|+1': 0,
+                    title:'@city'
+                }
+            ]
+        })
+        res.end(query.callback + "(" + JSON.stringify(data, null, 4) + ")")
+    } 
     else {
         res.end('路径不符')
     }

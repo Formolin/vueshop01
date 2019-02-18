@@ -22,10 +22,10 @@
           </router-link>
         </li>
         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-          <a href="#">
+          <router-link to="/home/imageshare">
             <img src="../../static/images/icon_01.png" alt="">
             <div class="mui-media-body">图片分享</div>
-          </a>
+          </router-link>
         </li>
         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
           <router-link to="/home/vuex">
@@ -64,15 +64,15 @@ div {
   .mint-swipe {
     height: 200px;
     .mint-swipe-item {
-      &:nth-child(1) {
-        background-color: aqua;
-      }
-      &:nth-child(2) {
-        background-color: red;
-      }
-      &:nth-child(3) {
-        background-color: yellow;
-      }
+      // &:nth-child(1) {
+      //   background-color: aqua;
+      // }
+      // &:nth-child(2) {
+      //   background-color: red;
+      // }
+      // &:nth-child(3) {
+      //   background-color: yellow;
+      // }
       img {
         width: 100%;
         height: 200px;
